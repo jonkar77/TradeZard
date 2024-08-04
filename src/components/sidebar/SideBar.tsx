@@ -24,7 +24,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
   const [activePath, setActivePath] = useState<string>("");
 
   const menuItems = [
-    { text: "Dashboard", icon: <RxDashboard size={22} />, path: "/profile/dashboard" },
+    { text: "Dashboard", icon: <RxDashboard size={22} />, path: "/dashboard" },
     { text: "Feed", icon: <MdDynamicFeed size={22} />, path: "/profile/feed" },
     { text: "Account", icon: <MdAccountBox size={22} />, path: "/profile/account" },
   ];

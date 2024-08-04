@@ -8,7 +8,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     <>
       <Navbar />
       <Sidebar >
-        <div className="bg-custom-grey h-full min-h-screen mt-16 rounded ">{children}</div>
+        <div className="bg-custom-grey h-full rounded ">{children}</div>
       </Sidebar>
     </>
   );

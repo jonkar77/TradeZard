@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainLayout from './layout/MainLayout';
 import NoLayout from './layout/NoLayout';
+import Dashboard from '../components/dashboard/Dashboard';
 
 // Lazy load the components
 const HomePage = lazy(() => import('../components/homePage'));
@@ -31,7 +32,7 @@ const AppRoutes: React.FC = () => {
             }
           />
           <Route
-            path="/dashboard"
+            path="/feed"
             element={
               <MainLayout>
                 <HomePage />
@@ -39,10 +40,10 @@ const AppRoutes: React.FC = () => {
             }
           />
           <Route
-            path="/feed"
+            path="/dashboard"
             element={
               <MainLayout>
-                <HomePage />
+                <Dashboard />
               </MainLayout>
             }
           />
