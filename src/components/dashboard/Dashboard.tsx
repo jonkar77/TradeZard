@@ -25,5 +25,5 @@ const Dashboard: React.FC = () => {
     </div>
   );
 }
-
+// 2
 export default Dashboard;
